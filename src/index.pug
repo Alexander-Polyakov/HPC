@@ -1,0 +1,97 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+    head(lang="en")
+        include pug/metatags.pug
+        +title('Главная')
+        include pug/styles.pug
+    body
+        .page
+            .page__soc
+                nav.soc
+                    a(href='#').soc__item.icon-facebook
+                    a(href='#').soc__item.icon-twitter
+            .page__header
+                a(href='#' data-target-popup='prices').page__header-button.button.js-open-popup Prices
+                a(href='#').page__header-button.button Login
+                a(href='#').page__header-button.button Register
+            .page__main
+                .main-content
+                    img(src='./images/logo.svg').main-content__logo
+                    .main-content__subtitle supercomputer on demand
+                    .templates-box
+                        .templates-box__top-content
+                            span.us-text INDUSTRIAL TEMPLATES
+                            nav.templates-box__nav.templates-nav
+                                a(href='#').templates-nav__link openfoam
+                                a(href='#').templates-nav__link ansys
+                                a(href='#').templates-nav__link matlab
+                            span.us-text MORE TO COME
+                        .templates-box__bottom-content
+                            span.us-text
+                                | BUILDOUT
+                                |
+                                strong APRIL 2018
+
+            .page__footer
+                a(href='#' data-target-popup='form').button.js-open-popup I want my HPC!
+
+            .page__popups.js-popups
+                .popups-flex
+                    .popup(data-popup-name='prices')
+                        .popup__close
+                            .close.js-close-popups
+                        .popup__title Prices
+                        .popup__content
+                            .prices-table
+                                .prices-table__tr
+                                    .prices-table__td.prices-table__td_title CPU:
+                                    .prices-table__td
+                                        | US$ 0.09 per core
+                                        |
+                                        span.light-text *hour
+                                .prices-table__tr
+                                    .prices-table__td.prices-table__td_title Storage:
+                                    .prices-table__td
+                                        | US$ 0.07 per GB
+                                        |
+                                        span.light-text *month
+                        .popup__footer
+                            a(href='#').popup__button.button I have a question!
+                            a(href='#').popup__button.button I want it now!
+
+                    form.popup(data-popup-name='form').popup_form
+                        .popup__close
+                            .close.js-close-popups
+                        .popup__title Ok, I need this
+                        .popup__content
+                            .form
+                                .form__section
+                                    .form__section-title Important stuff  (we'd better have it to help)
+                                    .form__line
+                                        input(type='text' placeholder='Name').st-input
+                                    .form__line
+                                        input(type='text' placeholder='Email or any other way we can contact you').st-input
+                                    .form__line
+                                        input(type='text' placeholder='How can we help?  Tell us about your problem (if you feel like it)').st-input
+                                    .form__line
+                                    .form__line
+                                .form__section
+                                    .form__section-title Non-important stuff (but still good to have it)
+                                    .form__line
+                                        input(type='text' placeholder='Number of cores you need').st-input
+                                    .form__line
+                                        input(type='text' placeholder='Volume of storage you need').st-input
+                                    .form__line
+                                        textarea(placeholder="Tell us more about what you'd like to have on your cluster? OS? Software? Libraries? Coffee machine?").st-textarea
+                                    .form__line
+                                    .form__line
+                        .popup__footer
+                            button.popup__button.button Send
+
+
+
+
+        include pug/scripts.pug

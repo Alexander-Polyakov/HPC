@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Awesome Description Here">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <title>HPCHUB | Главная</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fontello.css">
+  </head>
+  <body>
+    <div class="page">
+      <div class="page__soc">
+        <nav class="soc"><a class="soc__item icon-facebook" href="#"></a><a class="soc__item icon-twitter" href="#"></a></nav>
+      </div>
+      <div class="page__header"><a class="page__header-button button js-open-popup" href="#" data-target-popup="prices">Prices</a><a class="page__header-button button" href="#">Login</a><a class="page__header-button button" href="#">Register</a></div>
+      <div class="page__main">
+        <div class="main-content"><img class="main-content__logo" src="./images/logo.svg">
+          <div class="main-content__subtitle">supercomputer on demand</div>
+          <div class="templates-box">
+            <div class="templates-box__top-content"><span class="us-text">INDUSTRIAL TEMPLATES</span>
+              <nav class="templates-box__nav templates-nav"><a class="templates-nav__link" href="#">openfoam</a><a class="templates-nav__link" href="#">ansys</a><a class="templates-nav__link" href="#">matlab</a></nav><span class="us-text">MORE TO COME</span>
+            </div>
+            <div class="templates-box__bottom-content"><span class="us-text">
+                BUILDOUT
+                <strong>APRIL 2018</strong></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="page__footer"><a class="button js-open-popup" href="#" data-target-popup="form">I want my HPC!</a></div>
+      <div class="page__popups js-popups">
+        <div class="popups-flex">
+          <div class="popup" data-popup-name="prices">
+            <div class="popup__close">
+              <div class="close js-close-popups"></div>
+            </div>
+            <div class="popup__title">Prices</div>
+            <div class="popup__content">
+              <div class="prices-table">
+                <div class="prices-table__tr">
+                  <div class="prices-table__td prices-table__td_title">CPU:</div>
+                  <div class="prices-table__td">
+                    US$ 0.09 per core
+                    <span class="light-text">*hour</span>
+                  </div>
+                </div>
+                <div class="prices-table__tr">
+                  <div class="prices-table__td prices-table__td_title">Storage:</div>
+                  <div class="prices-table__td">
+                    US$ 0.07 per GB
+                    <span class="light-text">*month</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popup__footer"><a class="popup__button button" href="#">I have a question!</a><a class="popup__button button" href="#">I want it now!</a></div>
+          </div>
+          <form class="popup popup_form" data-popup-name="form">
+            <div class="popup__close">
+              <div class="close js-close-popups"></div>
+            </div>
+            <div class="popup__title">Ok, I need this</div>
+            <div class="popup__content">
+              <div class="form">
+                <div class="form__section">
+                  <div class="form__section-title">Important stuff  (we'd better have it to help)</div>
+                  <div class="form__line">
+                    <input class="st-input" type="text" placeholder="Name">
+                  </div>
+                  <div class="form__line">
+                    <input class="st-input" type="text" placeholder="Email or any other way we can contact you">
+                  </div>
+                  <div class="form__line">
+                    <input class="st-input" type="text" placeholder="How can we help?  Tell us about your problem (if you feel like it)">
+                  </div>
+                  <div class="form__line"></div>
+                  <div class="form__line"></div>
+                </div>
+                <div class="form__section">
+                  <div class="form__section-title">Non-important stuff (but still good to have it)</div>
+                  <div class="form__line">
+                    <input class="st-input" type="text" placeholder="Number of cores you need">
+                  </div>
+                  <div class="form__line">
+                    <input class="st-input" type="text" placeholder="Volume of storage you need">
+                  </div>
+                  <div class="form__line">
+                    <textarea class="st-textarea" placeholder="Tell us more about what you'd like to have on your cluster? OS? Software? Libraries? Coffee machine?"></textarea>
+                  </div>
+                  <div class="form__line"></div>
+                  <div class="form__line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="popup__footer">
+              <button class="popup__button button">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
