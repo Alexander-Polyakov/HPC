@@ -5,8 +5,10 @@ $(document).ready(function() {
 
         $('.js-popups-overlay').fadeIn(400);
         $('.js-popups').fadeIn(400);
+        $('[data-popup-name]').hide();
         $('[data-popup-name='+targetPopup+']').fadeIn(400);
     });
+
 
     $(".js-close-popups").click(function () {
 

@@ -14,6 +14,7 @@ html
                     a(href='#').soc__item.icon-facebook
                     a(href='#').soc__item.icon-twitter
             .page__header
+                a(href='#').page__header-button.button Old version
                 a(href='#' data-target-popup='prices').page__header-button.button.js-open-popup Prices
                 a(href='#').page__header-button.button Login
                 a(href='#').page__header-button.button Register
@@ -33,7 +34,7 @@ html
                             span.us-text
                                 | BUILDOUT
                                 |
-                                strong APRIL 2018
+                                strong JUNE 2018
 
             .page__footer
                 a(href='#' data-target-popup='form').button.js-open-popup I want my HPC!
@@ -59,8 +60,8 @@ html
                                         |
                                         span.light-text *month
                         .popup__footer
-                            a(href='#').popup__button.button I have a question!
-                            a(href='#').popup__button.button I want it now!
+                            a(href='#' data-target-popup='form').popup__button.button.js-open-popup I have a question!
+                            a(href='#' data-target-popup='form').popup__button.button.js-open-popup I want it now!
 
                     form.popup(data-popup-name='form').popup_form
                         .popup__close
@@ -76,8 +77,8 @@ html
                                         input(type='text' placeholder='Email or any other way we can contact you').st-input
                                     .form__line
                                         input(type='text' placeholder='How can we help?  Tell us about your problem (if you feel like it)').st-input
-                                    .form__line
-                                    .form__line
+                                    .form__line.mobile-dn
+                                    .form__line.mobile-dn
                                 .form__section
                                     .form__section-title Non-important stuff (but still good to have it)
                                     .form__line
@@ -86,8 +87,8 @@ html
                                         input(type='text' placeholder='Volume of storage you need').st-input
                                     .form__line
                                         textarea(placeholder="Tell us more about what you'd like to have on your cluster? OS? Software? Libraries? Coffee machine?").st-textarea
-                                    .form__line
-                                    .form__line
+                                    .form__line.mobile-dn
+                                    .form__line.mobile-dn
                         .popup__footer
                             button.popup__button.button Send
 
